@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="./img/icons/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav-row">
+          <a href="#" class="logo"><strong>Developer</strong> portfolio</a>
+
+          <!-- <button class="dark-mode-btn">
+                    <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
+                    <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
+                </button> -->
+
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="#header" class="nav-list__link">About</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#upper-section" class="nav-list__link">Project</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#middle-section" class="nav-list__link">Game</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#lower-section" class="nav-list__link">Feedback</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header" id="header">
+      <div class="header__wrapper">
+        <h1 class="header__title">
+          <strong>Hello! I'm <em>Roman</em></strong
+          >,<br />
+          intern frontend developer
+        </h1>
+        <div class="header__text">
+          <p>
+            with a flair for creating stunning and user-friendly websites. I
+            bring ideas to life through clean, elegant, and efficient code. My
+            mission is to elevate digital experiences and drive results.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="upper-section">
+        <div class="container">
+          <ul class="content-list">
+            <li class="content-list__item">
+              <h2 class="title-2">Project</h2>
+              <p>
+                This is a simple implementation of the classic Rock Paper
+                Scissors game. The game is played between a player and the
+                computer. The game rules are as follows: Rock beats scissors,
+                Scissors beats paper, Paper beats rock.
+              </p>
+            </li>
+          </ul>
+          <div class="gallery">
+            <img src="./img/projects/1.png" alt="Screenshot 1" />
+            <img src="./img/projects/2.png" alt="Screenshot 2" />
+            <img src="./img/projects/3.png" alt="Screenshot 3" />
+            <img src="./img/projects/4.png" alt="Screenshot 4" />
+          </div>
+        </div>
+      </section>
+      <section class="section" id="middle-section">
+        <div class="container">
+          <div class="content-list">
+            <h2 class="title-2">Rock Paper Scissors Game</h2>
+
+            <p>pick one</p>
+
+            <ul>
+              <li class="pick-one">
+                <button id="rock">
+                  <img src="./img/projects/rock2.png" alt="Rock" />
+                  rock
+                </button>
+              </li>
+              <li class="pick-one">
+                <button id="paper">
+                  <img src="./img/projects/paper2.png" alt="Paper" />
+                  paper
+                </button>
+              </li>
+              <li class="pick-one">
+                <button id="scissors">
+                  <img src="./img/projects/scissors2.png" alt="Scissors" />
+                  scissors
+                </button>
+              </li>
+            </ul>
+            <p id="result"></p>
+            <p id="scores">
+              Your score: <span id="user-score">0</span> Computer score:
+              <span id="computer-score">0</span>
+            </p>
+          </div>
+          <div id="snackbar">This is a snackbar</div>
+          <div id="confetti-container"></div>
+        </div>
+      </section>
+      <section class="section" id="lower-section">
+        <div class="container">
+          <div class="feedback-form">
+            <h2 class="title-2">Feedback</h2>
+            <form action="https://formspree.io/f/xaygkpdz" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required autocomplete="name" />
+            
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+            
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required autocomplete="off"></textarea>
+            
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <ul class="social">
+            <li class="social__item">
+              <a href="https://github.com/Amber2703" target="_blank"
+                ><img src="./img/icons/gitHub.svg" alt="Link"
+              /></a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://linkedin.com/in/roman-zolotarov-330276145"
+                target="_blank"
+                ><img src="./img/icons/linkedIn.svg" alt="Link"
+              /></a>
+            </li>
+            <li class="social__item">
+              <a href="https://t.me/Amber_2703" target="_blank"
+                ><img src="./img/icons/telegram.svg" alt="Link"
+              /></a>
+            </li>
+          </ul>
+          <div class="copyright">
+            <p>&copy; 2023 RomZol. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>
